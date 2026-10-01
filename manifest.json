@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Temporary Speed Clutch",
+  "version": "1.0.0",
+  "description": "Hold a key while watching YouTube to temporarily drop playback to 1x. Release the key and your original speed returns instantly.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Speed Clutch",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

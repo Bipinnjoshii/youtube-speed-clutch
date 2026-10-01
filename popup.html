@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Speed Clutch</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1 class="app__title">Speed Clutch</h1>
+      <p class="app__subtitle">Hold a key to drop to 1x on YouTube.</p>
+    </header>
+
+    <section class="hotkey-card">
+      <span class="hotkey-card__label">Hotkey</span>
+      <span class="hotkey-card__value" id="currentHotkeyLabel">Left Shift</span>
+    </section>
+
+    <button class="btn" id="changeBtn" type="button">Change Hotkey</button>
+    <button class="btn btn--ghost" id="resetBtn" type="button">Reset to Default</button>
+
+    <p class="status" id="statusText"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
